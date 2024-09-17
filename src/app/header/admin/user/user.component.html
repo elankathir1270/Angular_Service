@@ -1,0 +1,9 @@
+<div class="card" style="width: 12rem;" *ngIf="selectedUser">
+  <img class="card-img-top" src="../../../../assets/male-user.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title">{{selectedUser.name}}</h2>
+    <p><b>Gender: </b>{{selectedUser.gender}}</p>
+    <p><b>Plan: </b>{{selectedUser.plan}}</p>
+    <p><b>Status: </b>{{selectedUser.status}}</p>
+  </div>
+</div>

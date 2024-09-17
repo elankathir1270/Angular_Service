@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="card rounded-0 my-2">
+    <div class="card-header">
+      ADMIN
+    </div>
+  </div>
+
+  <div class="card rounded-0 my-2 p-4">
+    <form>
+      <div class="row">
+        <div class="col">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" [(ngModel)]="name" >
+        </div>
+        <div class="col">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" class="form-control" [(ngModel)]="gender">
+            <option selected >- Select -</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="subscriptionType">Subscription Type</label>
+          <select id="subscriptionType" name="subscriptionType" class="form-control" [(ngModel)]="plan">
+            <option selected >- Select -</option>
+            <option value="monthly">Monthly</option>
+            <option value="quaterly">Quaterly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="active">Active</label>
+          <select id="active" name="active" class="form-control" [(ngModel)]="status">
+            <option selected >- Select -</option>
+            <option value="active">Active</option>
+            <option value="inactive">In active</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end my-2">
+        <button class="btn btn-success" (click)="createUser()">Create</button>
+      </div>
+    </form>
+    <app-use-detail></app-use-detail>
+
+    <div class="d-flex justify-content-center">
+      <app-user></app-user>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,32 @@
+<div class="card-group my-4" *ngFor="let user of userList">
+  <div class="card rounded-0">
+    <div class="card-body ">
+      <h5 class="card-title">Name</h5>
+      <p class="card-text">{{user.name}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Gender</h5>
+      <p class="card-text">{{user.gender}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Plan type</h5>
+      <p class="card-text">{{user.plan}}</p>
+    </div>
+  </div>
+  <div class="card rounded-0">
+    <div class="card-body">
+      <h5 class="card-title">Status</h5>
+      <p class="card-text">{{user.status}}</p>
+    </div>
+  </div>
+
+  <div>
+      <button class="btn btn-success mx-2 h-100" (click)="showUserDetail(user)">+</button>
+  </div>
+</div>
+
+
